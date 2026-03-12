@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+
+    <form action="#" method="post">
+        
+        <fieldset>
+            <legend>Crie sua Conta</legend>
+
+            <div style="margin-bottom: 15px;">
+                <label for="nome">Nome Completo:</label><br>
+                <input type="text" id="nome" name="nome_usuario" placeholder="Digite seu nome" required>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email_usuario" placeholder="exemplo@email.com" required>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="senha">Senha:</label><br>
+                <input type="password" id="senha" name="senha_usuario" minlength="8" required>
+                <small>(Mínimo de 8 caracteres)</small>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <p><strong>Gênero</strong></p>
+                
+                <input type="radio" id="masc" name="genero" value="masculino">
+                <label for="masc">Masculino</label><br>
+                
+                <input type="radio" id="fem" name="genero" value="feminino">
+                <label for="fem">Feminino</label><br>
+
+                <input type="radio" id="outro" name="genero" value="outro">
+                <label for="outro">Outro</label>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <label for="bio">Biografia:</label><br>
+                <textarea id="bio" name="biografia" rows="5" placeholder="Conte um pouco sobre você..."></textarea>
+            </div>
+
+            <div style="margin-bottom: 15px;">
+                <input type="checkbox" id="termos" name="termos_uso" required>
+                <label for="termos">Eu concordo com os termos de uso.</label>
+            </div>
+
+            <button type="submit">Finalizar Cadastro</button>
+            <button type="reset">Limpar</button>
+
+        </fieldset>
+
+    </form>
+
+</body>
+</html>
