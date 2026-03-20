@@ -1,0 +1,151 @@
+/* 1. Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Corpo da página (Fundo Areia bem clarinho) */
+body {
+    background-color: #f0f4f8; 
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #334155;
+    line-height: 1.6;
+}
+
+/* 3. Cabeçalho (Azul Oceano Profundo) */
+header {
+    background-color: #075985; 
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+header h1 {
+    font-size: 36px;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+}
+
+/* 4. Menu de Navegação */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e0f2fe;
+    font-weight: 500;
+    font-size: 17px;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* 5. Área Central da Página */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* 6. O "Card" do Post Principal */
+article {
+    background-color: #ffffff;
+    padding: 0; /* Tiramos o padding para a imagem encostar nas bordas */
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    overflow: hidden; /* Garante que a imagem respeite o arredondamento */
+    margin-bottom: 40px;
+}
+
+/* 7. Imagem do Post */
+.imagem-topo-card {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Conteúdo interno do Article (para dar o espaçamento que tiramos do card) */
+article h2, article p, article time {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* 8. Textos do Post */
+article h2 {
+    font-size: 30px;
+    color: #0f172a;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+article time {
+    display: block;
+    color: #0ea5e9; /* Azul vivo para a data */
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+article p {
+    margin-bottom: 20px;
+    font-size: 17px;
+    color: #475569;
+}
+
+article p:last-child {
+    padding-bottom: 30px;
+}
+
+/* 9. Posts Relacionados */
+aside {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    border-left: 5px solid #0ea5e9;
+}
+
+aside h3 {
+    font-size: 20px;
+    color: #0f172a;
+    margin-bottom: 15px;
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside li {
+    margin-bottom: 12px;
+}
+
+aside a {
+    color: #0284c7;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+aside a:hover {
+    text-decoration: underline;
+}
+
+/* 10. Rodapé */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f1f5f9;
+    color: #94a3b8;
+    font-size: 14px;
+}
