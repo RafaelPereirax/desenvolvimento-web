@@ -1,0 +1,16 @@
+body { font-family: sans-serif; display: flex; justify-content: center; padding: 20px; }
+.container { width: 300px; }
+.input-group { display: flex; gap: 5px; margin-bottom: 20px; }
+input { flex: 1; padding: 8px; }
+button { cursor: pointer; padding: 8px; }
+
+ul { list-style: none; padding: 0; }
+li { 
+    background: #f4f4f4; 
+    margin-bottom: 5px; 
+    padding: 10px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background 0.2s;
+}
+li:hover { background: #ffcccc; color: red; } /* Feedback visual para remoção */
