@@ -1,0 +1,130 @@
+
+:root {
+  --primary-color: #646cff;
+  --bg-color: #1a1a1a;
+  --card-bg: #242424;
+  --text-color: #ffffff;
+  --danger-color: #ff4646;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  
+  padding: 3rem 2rem 2rem 2rem; 
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+
+h1 {
+  font-size: 2rem;
+  
+  margin-bottom: 2rem; 
+  
+  margin-top: 0; 
+  padding: 0;
+  font-weight: 700;
+  text-align: center;
+  
+  color: var(--primary-color); 
+}
+
+/* Formulário */
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+input {
+  flex: 1;
+  padding: 12px 16px;
+  border-radius: 8px;
+  border: 1px solid #3f3f3f;
+  background-color: #2f2f2f;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: var(--primary-color);
+}
+
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: #535bf2;
+  transform: translateY(-2px);
+}
+
+/*estilo da lista */
+ul {
+  list-index: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #2f2f2f;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+  border-left: 4px solid var(--primary-color);
+}
+
+li:hover {
+  transform: scale(1.02);
+  background-color: #3a3a3a;
+}
+
+li span {
+  font-size: 1rem;
+  color: #e2e2e2;
+}
+
+/* Botão Remover */
+.btn-remover {
+  background: transparent;
+  color: var(--danger-color);
+  border: 1px solid var(--danger-color);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-remover:hover {
+  background-color: var(--danger-color);
+  color: white;
+}
